@@ -17,11 +17,10 @@
                             <div class="form-group">
                                 <label for="category">Category</label>
                                 <select class="form-control" name="category" id="category">
-                                    <option selected disable >Please Select One</option>
-                                    <option value="school">School</option>
-                                    <option value="university">University</option>
-                                    <option value="organization">Organization</option>
-                                    <option value="other">Other</option>
+                                    <option selected disabled >Please Select One</option>
+                                    @foreach ($categories as $category)
+                                    <option value="{{$category->id}}">{{$category->name}}</option>
+                                    @endforeach
                                 </select>
                             </div>
                             <div class="form-group">

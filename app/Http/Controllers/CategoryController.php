@@ -2,12 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Student;
-use Illuminate\Http\Request;
 use App\Models\Category;
+use Illuminate\Http\Request;
 
-
-class StudentController extends Controller
+class CategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -27,8 +25,6 @@ class StudentController extends Controller
     public function create()
     {
         //
-        $categories = Category::all();
-        return view('register')->with('categories', $categories);
     }
 
     /**
@@ -40,16 +36,15 @@ class StudentController extends Controller
     public function store(Request $request)
     {
         //
-        return $request;
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Student  $student
+     * @param  \App\Models\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function show(Student $student)
+    public function show(Category $category)
     {
         //
     }
@@ -57,10 +52,10 @@ class StudentController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Student  $student
+     * @param  \App\Models\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function edit(Student $student)
+    public function edit(Category $category)
     {
         //
     }
@@ -69,10 +64,10 @@ class StudentController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Student  $student
+     * @param  \App\Models\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Student $student)
+    public function update(Request $request, Category $category)
     {
         //
     }
@@ -80,10 +75,10 @@ class StudentController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Student  $student
+     * @param  \App\Models\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Student $student)
+    public function destroy(Category $category)
     {
         //
     }

@@ -32,7 +32,7 @@
                             <a class="small" href="#">Forgot Password?</a>
                         </div>
                         <div class="text-center">
-                            <a class="small" href="#">Don't have an account? create one now!</a>
+                            <a class="small" href="{{route('student.create')}}">Don't have an account? create one now!</a>
                         </div>
                     </div>
                 </div>
