@@ -3,7 +3,6 @@
 
 @section('content')
 <div class="container col-10">
-
     <div class="card o-hidden border-0 shadow-lg my-5" style="border-radius: 1rem;">
         <div class="card-body p-0">
             <div class="row">
@@ -57,7 +56,7 @@
     <img class="img-fluid" src="{{asset('img/placement-test.png')}}" alt="placement test">
 </div>
 
-<div class="container col-10">
+<div class="container col-10" id='courses'>
     <h1 class="h1 text-grey-900 text-center pt-3">Choose Your Course</h1>
     <div class="card o-hidden border-0 shadow-lg my-5 bg-home-gredient" style="border-radius: 1rem;">
         <div class="card-body p-0">
