@@ -6,7 +6,7 @@
     <nav class="my-2 my-md-0 mr-md-3">
       <a class="p-2 text-dark" href="{{route('home')}}">Home</a>
       <a class="p-2 text-dark" href="#">Products</a>
-      <a class="p-2 text-dark" href="#">Courses</a>
+      <a class="p-2 text-dark" href="{{route('courses')}}">Courses</a>
       <a class="p-2 text-dark" href="#">Teachers</a>
       <a class="p-2 text-dark" href="#">About</a>
       <a class="p-2 text-dark" href="#">Contact Us</a>
