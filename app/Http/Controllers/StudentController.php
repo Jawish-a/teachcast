@@ -6,6 +6,7 @@ use App\Models\Student;
 use Illuminate\Http\Request;
 use App\Models\Category;
 
+use Illuminate\Support\Facades\Http;
 
 class StudentController extends Controller
 {
@@ -40,7 +41,19 @@ class StudentController extends Controller
     public function store(Request $request)
     {
         //
-        return $request;
+        // $response = Http::get('http://example.com');
+        $response = Http::asForm()->withBasicAuth('45', '0d08be5697034bc28f30a33c2070d523')->post('https://api.eleutian.com/v1/students/brandsmktg/alijawish', [
+            'FirstName' => $request->first_name,
+            'LastName' => $request->last_name,
+            'PublicName' => $request->first_name . ' ' . $request->last_name,
+            'Email' => $request->email,
+            'password' => $request->password,
+            'Locale' => 'ar-SA',
+            'TimeZone' => 'Arab Standard Time',
+            'dateOfBirth' => '1991-05-18',
+        ]);
+
+        return $response;
     }
 
     /**

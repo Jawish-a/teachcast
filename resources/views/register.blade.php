@@ -25,12 +25,12 @@
                             </div>
                             <div class="form-group">
                                 <label for="first-name">First Name</label>
-                                <input class="form-control" id="first-name" name="firstname" type="text" placeholder="John">
+                                <input class="form-control" id="first-name" name="first_name" type="text" placeholder="John">
                             </div>
 
                             <div class="form-group">
                                 <label for="last-name">Last Name</label>
-                                <input class="form-control" id="last-name" name="lastname" type="text" placeholder="Snow">
+                                <input class="form-control" id="last-name" name="last_name" type="text" placeholder="Snow">
                             </div>
 
                             <div class="form-group">
